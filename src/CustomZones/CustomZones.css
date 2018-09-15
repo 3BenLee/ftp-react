@@ -1,0 +1,17 @@
+.CustomZonesButton {
+  
+}
+
+.CustomZones {
+  width: 33%;
+  margin: 40px auto;
+  display: flex;
+}
+
+.CustomZonesColumns {
+  width: 35%;
+}
+
+.CustomZonesUnorderedList {
+  list-style-type: none;
+}

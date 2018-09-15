@@ -1,0 +1,13 @@
+.Wrapper {
+  width: 100%;
+  /*adds opacity to background*/  
+  /* background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(${ photo }); */
+  /* Center and scale*/
+  background: lightskyblue;
+  overflow: hidden;
+  /* height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; */
+}
