@@ -7,14 +7,14 @@ const Navbar = (props) => {
     return(
         <nav className={ classes.Navbar }>
             <ul>
-                <li className={ classes.NavbarTitle }>
-                    Data
-                </li>
+                {/* <li className={ classes.NavbarTitle }>
+                    Mashing
+                </li> */}
                 <li className={ classes.NavbarLogo }>
-                    <img src={ logo } />
+                    <img className={ classes.NavbarLogo }src={ logo } />
                 </li>
                 <li className={ classes.NavbarTitle }>
-                    Masher
+                    Mashing the Data
                 </li>
             </ul>
         </nav>     
