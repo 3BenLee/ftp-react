@@ -5,6 +5,7 @@ import CustomZonesButton from './Components/CustomZonesButton';
 import CustomZones from './Components/CustomZones';
 import FTPTable from './Components/FTPTable';
 import ZoneInformation from './Components/ZoneInformation';
+import { isNullOrUndefined } from 'util';
 
 class App extends Component {
   constructor(props){
@@ -12,11 +13,13 @@ class App extends Component {
       this.state = {
     title: 'Custom Zones',
     showing: false,
-    customZoneValues: [],
+    defaultZones: [.55,.75,.90,1.05,1.2],
+    customZ1:"",customZ2:"",customZ3:"",customZ4:"",customZ5:"",
     FTP: "",
     a1:"",a2:"",a3:"",a4:"",a5:"",
     zone1:"",zone2:"",zone3:"",zone4:"",zone5:"",zone6:"Neuromuscular"
-    }
+    };
+    this.customValueChangeHandler = this.customValueChangeHandler.bind(this);
   }
 
   displayCustomZonesHandler = () => {
@@ -25,17 +28,17 @@ class App extends Component {
   }
   
   customValueChangeHandler = e => {
-    e.preventDefault();
-    this.setState({ customZoneValues: e.target.value });
-    //console.log(this.state.customZoneValues);
+    //e.preventDefault();
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+      //console.log(this.state.customZ1);
   }
 
   CustomZonesValueHandler = e => {
-    var myZones = [];
-    myZones.push(this.state.customZoneValues)
-    //this.setState({customZoneValues: this.state.customZoneValues})
-    //this.state.customZoneValues.push(e.target.value);
-    console.log(myZones)
+    console.log(this.state.customZ1);
+    console.log(this.state.customZ2);
+    console.log(this.state.customZ3);
   }
 
   ftpInputChange = e => {
@@ -46,8 +49,15 @@ class App extends Component {
 
   ftpClickHandler = e => {
     var zones= [];
-    var myArr = [.55,.75,.90,1.05,1.2];
+    var myArr = this.state.defaultZones;
     this.setState({FTP: this.state.FTP});
+    // console.log(this.state.customZ1)
+    // if (this.state.customZ1 == "null" || "" || 0 || null
+    //     this.state.customZ2 || 
+    //     this.state.customZ3 || 
+    //     this.state.customZ4 ||
+    //     this.state.customZ5 === 0
+    //   ){
     zones = myArr.map(x => Math.round(x * this.state.FTP));
     this.setState({zone1: '0 to ' + zones[0]})
     var a1 = zones[0]+1;
