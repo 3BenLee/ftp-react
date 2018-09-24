@@ -1,22 +1,67 @@
 table {
-  width: 70%;
-  background: green;
+  width: 60%;
+  background-color: #D2EBCD; /*green*/
   margin: 0 auto 50px auto;
+  border-radius: 10px;
+  border: 2px solid #394A51;
+  color: #394A51;
 }
 
-.zone {
-	font-size: 1rem;
-	text-align: left;
-	width: 70%;
-	padding-left: 20px;
+.TableHeader {
+  padding: 0;
 }
 
-.calc {
-	text-align: center;
-	font-size: 1rem;
-	width: 30%;
-	opacity: 0; 
-	transform: scale(1.10); 
+.FtpInputBox {
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, .6);
+}
+
+.GetZonesButton {
+  padding: 10px;
+  border-radius: 20px;
+  margin: 60px 0 30px 40px;
+  font-weight: 700;
+  color: #394A51;
+  font-size: .9rem;
+  background-color: rgba(255, 255, 255, .7);
+  border: 2px solid #394A51;
+  transition: background-color 0.5s ease-out;
+}
+
+.GetZonesButton:hover {
+  cursor: pointer;
+  background-color: #FDC57B;
+}
+
+.GetZonesButton:focus {
+  outline:0;
+}
+
+.ResetZonesButton {
+  padding: 10px;
+  border-radius: 20px;
+  margin: 60px 0 30px 40px;
+  font-weight: 700;
+  color: #394A51;
+  font-size: .9rem;
+  background-color: rgba(255, 255, 255, .7);
+  border: 2px solid #394A51;
+  transition: background-color 0.5s ease-out;
+}
+
+.ResetZonesButton:hover {
+  cursor: pointer;
+  background-color: #FDC57B;
+}
+
+.ResetZonesButton:focus {
+  outline:0;
+}
+
+.TableZones {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 tr {

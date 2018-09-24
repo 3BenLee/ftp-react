@@ -1,0 +1,22 @@
+
+
+.CustomZonesButton {
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px 0 20px 40px;
+  font-weight: 700;
+  color: #394A51;
+  font-size: .9rem;
+  background-color: rgba(255, 255, 255, .7);
+  border: 2px solid #394A51;
+  transition: background-color 0.5s ease-out;
+}
+
+.CustomZonesButton:hover {
+  cursor: pointer;
+  background-color: #D2EBCD;
+}
+
+.CustomZonesButton:focus {
+  outline:0;
+}

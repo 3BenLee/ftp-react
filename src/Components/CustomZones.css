@@ -1,17 +1,41 @@
-.CustomZonesButton {
-  
-}
 
 .CustomZones {
-  width: 33%;
-  margin: 40px auto;
   display: flex;
-}
-
-.CustomZonesColumns {
-  width: 35%;
 }
 
 .CustomZonesUnorderedList {
   list-style-type: none;
 }
+
+.CustomInputs {
+  margin: 10px 0;
+}
+
+.CustomInputBoxes {
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, .6);
+}
+
+.SaveButton {
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px 0 10px 0;
+  font-weight: 700;
+  color: #394A51;
+  font-size: .9rem;
+  background-color: rgba(255, 255, 255, .7);
+  border: 2px solid #394A51;
+  transition: background-color 0.5s ease-out;
+}
+  
+.SaveButton:hover {
+  cursor: pointer;
+  background-color: #D2EBCD;
+}
+  
+.SaveButton:focus {
+  outline:0;
+}
+
