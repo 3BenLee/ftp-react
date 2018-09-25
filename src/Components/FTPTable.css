@@ -1,6 +1,7 @@
 table {
-  width: 60%;
-  background-color: #D2EBCD; /*green*/
+  width: 65%;
+  /* background-color: #D2EBCD; green */
+  background-color: rgba(210, 235, 205, .6);
   margin: 0 auto 50px auto;
   border-radius: 10px;
   border: 2px solid #394A51;
@@ -8,14 +9,14 @@ table {
 }
 
 .TableHeader {
-  padding: 0;
+
 }
 
 .FtpInputBox {
   padding: 10px 18px;
   font-size: 1rem;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, .6);
+  background-color: rgba(255, 255, 255, .7);
 }
 
 .GetZonesButton {

@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import classes from './App.css';
-import Navbar from './Components/Navbar';
 import CustomZonesButton from './Components/CustomZonesButton';
 import CustomZones from './Components/CustomZones';
-import FTPTable from './Components/FTPTable';
-import ZoneInformation from './Components/ZoneInformation';
-import Validator from 'validator';
-import Zoom from 'react-reveal';
 import Footer from './Components/Footer';
-
+import FTPTable from './Components/FTPTable';
+import Navbar from './Components/Navbar';
+import Validator from 'validator';
+import ZoneInformation from './Components/ZoneInformation';
+import Zoom from 'react-reveal';
 
 class App extends Component {
   constructor(props){
