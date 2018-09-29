@@ -4,14 +4,12 @@ import classes from './FTPTable.css';
 
 class FTPTable extends Component {
   constructor(props){
-    super(props)
-
-    
+    super(props)  
   }
 
   render () {
     return(
-      
+   
       <div>	
         <table>
           <tbody>
@@ -32,7 +30,7 @@ class FTPTable extends Component {
                   Reset
                 </button>
               </th>
-              <th>Watts</th>
+              <th className={classes.TableHeader}>Watts</th>
             </tr>
             <tr>
               <td className={classes.TableZones}>Zone 1: Active Recovery</td> 

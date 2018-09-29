@@ -1,4 +1,5 @@
 table {
+  display: flex;
   width: 65%;
   /* background-color: #D2EBCD; green */
   background-color: rgba(210, 235, 205, .6);
@@ -8,8 +9,12 @@ table {
   color: #394A51;
 }
 
-.TableHeader {
+tbody {
+  width: 100%;
+}
 
+.TableHeader {
+  width: 100%;
 }
 
 .FtpInputBox {
@@ -22,7 +27,7 @@ table {
 .GetZonesButton {
   padding: 10px;
   border-radius: 20px;
-  margin: 60px 0 30px 40px;
+  margin: 15px 0 15px 15px;
   font-weight: 700;
   color: #394A51;
   font-size: .9rem;
@@ -43,7 +48,7 @@ table {
 .ResetZonesButton {
   padding: 10px;
   border-radius: 20px;
-  margin: 60px 0 30px 40px;
+  margin: 15px 0 15px 15px;
   font-weight: 700;
   color: #394A51;
   font-size: .9rem;
@@ -63,6 +68,7 @@ table {
 
 .TableZones {
   font-family: 'Roboto Condensed', sans-serif;
+  width: 50%;
 }
 
 tr {
