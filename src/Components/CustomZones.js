@@ -13,9 +13,8 @@ class CustomZones extends React.Component {
   render() {
     return(
       <div>
-        {/* <h1>Enter the low end value for any or all zones</h1>     */}
         <div className={classes.CustomZonesColumns} showing={this.state.showing}>
-          <h3>*Enter custom zones values in the same format as below. (e.g. .61)</h3>
+          <h3 className={classes.CustomZonesNote}>*Enter custom zones values in the same format as below. (e.g. 60% = .61)</h3>
           <ul className={classes.CustomZonesUnorderedList}> 
             <li className={classes.CustomInputs}>
               <input

@@ -30,31 +30,31 @@ class FTPTable extends Component {
                   Reset
                 </button>
               </th>
-              <th className={classes.TableHeader}>Watts</th>
+              <th className={classes.TableWatts}>Watts</th>
             </tr>
             <tr>
               <td className={classes.TableZones}>Zone 1: Active Recovery</td> 
-              <td className={classes.TableZones}>{this.props.zone1}</td>
+              <td className={classes.TableOutput}>{this.props.zone1}</td>
             </tr>
             <tr>
               <td className={classes.TableZones}>Zone 2: Endurance</td>
-              <td className={classes.TableZones}>{this.props.zone2}</td>
+              <td className={classes.TableOutput}>{this.props.zone2}</td>
             </tr>
             <tr>
               <td className={classes.TableZones}>Zone 3: Tempo</td>
-              <td className={classes.TableZones}>{this.props.zone3}</td>
+              <td className={classes.TableOutput}>{this.props.zone3}</td>
             </tr>
             <tr>
               <td className={classes.TableZones}>Zone 4: Lactate Threshold</td>
-              <td className={classes.TableZones}>{this.props.zone4}</td>
+              <td className={classes.TableOutput}>{this.props.zone4}</td>
             </tr>
             <tr>
               <td className={classes.TableZones}>Zone 5: VO2 Max</td>
-              <td className={classes.TableZones}>{this.props.zone5}</td>
+              <td className={classes.TableOutput}>{this.props.zone5}</td>
             </tr>
             <tr>
               <td className={classes.TableZones}>Zone 6: Anaerobic Capacity</td>
-              <td className={classes.TableZones}>{this.props.zone6}</td>
+              <td className={classes.TableOutput}>{this.props.zone6}</td>
             </tr>
           </tbody>
         </table>
