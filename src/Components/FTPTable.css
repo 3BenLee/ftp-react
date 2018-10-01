@@ -135,6 +135,9 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 561px) {
 
+  table {
+    width: 90%;
+  }
   .FtpInputBox {
     width: 60px;
     padding: 10px 18px;
