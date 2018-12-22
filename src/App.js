@@ -15,7 +15,7 @@ class App extends Component {
       this.state = {
         title: 'Custom Zones',
         showing: false,
-        isZonesVisible:false,
+        isZonesVisible: false,
         defaultZones: [.55,.75,.90,1.05,1.2],
         customZ1:"",customZ2:"",customZ3:"",customZ4:"",customZ5:"",
         FTP: "",
@@ -25,12 +25,11 @@ class App extends Component {
   }
 
   displayCustomZonesHandler = () => {
-    //console.log('button');
+    //////////console.log('button');
     this.setState(prevState => ({ showing: !prevState.showing }));
   }
   
   customValueChangeHandler = e => {
-    //e.preventDefault();
     this.setState({
       [e.target.name]: e.target.value
     });
@@ -55,29 +54,29 @@ class App extends Component {
     var a3 = Math.round(this.state.customZ3 * this.state.FTP) + 1;
     var a4 = Math.round(this.state.customZ4 * this.state.FTP) + 1;
     
-    if(this.state.FTP != "" && Validator.isNumeric(this.state.FTP)) {
+    if(this.state.FTP !== "" && Validator.isNumeric(this.state.FTP)) {
       {this.calcDefaultZone()
 
-      if(this.state.customZ1 != ""){
+      if(this.state.customZ1 !== ""){
         this.setState({zone1 : "0 to " + Math.round(this.state.customZ1 * this.state.FTP)})     
       }
-      if(this.state.customZ2 != ""){
+      if(this.state.customZ2 !== ""){
         this.setState({zone2 : a1 +  " to " + Math.round(this.state.customZ2 * this.state.FTP)})
       }
-      if(this.state.customZ3 != ""){
+      if(this.state.customZ3 !== ""){
         this.setState({zone3 : a2 + " to " + Math.round(this.state.customZ3 * this.state.FTP)})
       }
-      if(this.state.customZ4 != ""){
+      if(this.state.customZ4 !== ""){
         this.setState({zone4 : a3 + " to " + Math.round(this.state.customZ4 * this.state.FTP)})
       } 
-      if(this.state.customZ5 != ""){
+      if(this.state.customZ5 !== ""){
         this.setState({zone5 : a4 + " to " + Math.round(this.state.customZ5 * this.state.FTP)})
       }
     }
   }
 }
 
-calcDefaultZone(){
+calcDefaultZone () {
   var zones= [];
   var myArr = this.state.defaultZones;
   this.setState({FTP: this.state.FTP});
