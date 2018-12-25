@@ -1,0 +1,2 @@
+export const CALCULATE_DEFAULT_ZONES ='CALCULATE_DEFAULT_ZONE';
+export const SET_FTP ='SET_FTP';

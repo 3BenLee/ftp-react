@@ -20,15 +20,18 @@ tbody {
 .FtpInputBox {
   width: 60px;
   padding: 10px 18px;
+  margin-top: 20px;
   font-size: 1rem;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, .7);
+  float: left;
 }
 
 .GetZonesButton {
   padding: 10px;
   border-radius: 20px;
-  margin: 15px 0 0 15px;
+  margin: 20px 0 0 15px;
+  float: left;
   font-weight: 700;
   color: #394A51;
   font-size: .9rem;
@@ -49,7 +52,8 @@ tbody {
 .ResetZonesButton {
   padding: 10px 25px;
   border-radius: 20px;
-  margin: 15px 0 20px 15px;
+  margin: 20px 0 20px 15px;
+  float: left;
   font-weight: 700;
   color: #394A51;
   font-size: .9rem;
@@ -74,7 +78,7 @@ tbody {
 
 .TableZones {
   font-family: 'Roboto Condensed', sans-serif;
-  width: 50%;
+  width: 10%;
   padding: 0 20px;
   letter-spacing: 1px;
 	line-height: 45px;
@@ -83,7 +87,7 @@ tbody {
 
 .TableOutput {
   font-family: 'Roboto Condensed', sans-serif;
-  width: 50%;
+  width: 0%;
   padding: 0 20px;
   letter-spacing: 1px;
 	line-height: 45px;

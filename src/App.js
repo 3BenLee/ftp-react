@@ -3,7 +3,7 @@ import classes from './App.css';
 import CustomZonesButton from './Components/CustomZonesButton';
 import CustomZones from './Components/CustomZones';
 import Footer from './Components/Footer';
-import FTPTable from './Components/FTPTable';
+import ZonesTable from './Components/FTPTable';
 import Navbar from './Components/Navbar';
 import Validator from 'validator';
 import ZoneInformation from './Components/ZoneInformation';
@@ -21,11 +21,12 @@ class App extends Component {
         FTP: "",
         zone1:"",zone2:"",zone3:"",zone4:"",zone5:"",zone6:""
         };
+
         this.customValueChangeHandler = this.customValueChangeHandler.bind(this);
   }
 
   displayCustomZonesHandler = () => {
-    //////////console.log('button');
+    //console.log('button');
     this.setState(prevState => ({ showing: !prevState.showing }));
   }
   
@@ -33,7 +34,7 @@ class App extends Component {
     this.setState({
       [e.target.name]: e.target.value
     });
-      //console.log(this.state.customZ1);
+      console.log(this.state.customZ1);
   }
 
   CustomZonesValueHandler = e => {
@@ -41,13 +42,7 @@ class App extends Component {
     console.log(this.state.customZ2);
     console.log(this.state.customZ3);
   }
-
-  ftpInputChange = e => {
-    e.preventDefault();
-    //console.log(e.target.value) 
-    this.setState({FTP: e.target.value})
-  }
-
+  
   checkZone = (e) => {
     var a1 = Math.round(this.state.customZ1 * this.state.FTP) + 1;
     var a2 = Math.round(this.state.customZ2 * this.state.FTP) + 1;
@@ -77,7 +72,7 @@ class App extends Component {
 }
 
 calcDefaultZone () {
-  var zones= [];
+  let zones= [];
   var myArr = this.state.defaultZones;
   this.setState({FTP: this.state.FTP});
   this.setState({zone1: ""})
@@ -129,7 +124,7 @@ resetButtonHandler = (e) => {
         <Navbar />
 
         <div className={classes.tableWrapper}>
-          <div className={classes.CustomZonesButtonWrapper}>
+          {/* <div className={classes.CustomZonesButtonWrapper}>
             <CustomZonesButton 
               title={this.state.title} 
               showInputs={this.displayCustomZonesHandler.bind(this)}
@@ -148,8 +143,8 @@ resetButtonHandler = (e) => {
               customZ4={this.state.customZ4}
               customZ5={this.state.customZ5}
             /></Zoom> : null }
-          </div>          
-            <FTPTable
+          </div>           */}
+            <ZonesTable
               // Get FTP value 
               onChange={e => this.ftpInputChange(e)}
               onClick={e => this.checkZone(e)}

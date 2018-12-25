@@ -1,19 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classes from './CustomZones.css';
 
-//const CustomZones = (props) => {
-
-class CustomZones extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {   
-    }; 
-  }
+class CustomZones extends Component {
 
   render() {
     return(
       <div>
-        <div className={classes.CustomZonesColumns} showing={this.state.showing}>
+        <div className={classes.CustomZonesColumns}>
           <h3 className={classes.CustomZonesNote}>*Enter custom zones values in the same format as below. (e.g. 60% = .61)</h3>
           <ul className={classes.CustomZonesUnorderedList}> 
             <li className={classes.CustomInputs}>
