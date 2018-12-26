@@ -1,9 +1,9 @@
 import { CALCULATE_DEFAULT_ZONES } from './types';
 
-export const calculateDefaultZones = (zones) => dispatch => {
+export const calculateDefaultZones = (FTP) => dispatch => {
   console.log('CalcDefaultZones Actions');
   dispatch({
     type: CALCULATE_DEFAULT_ZONES,
-    payload: zones
+    payload: FTP
   }) 
 }
